@@ -15,8 +15,8 @@ beq $s0 $0 printFizz	#print FIZZ if t0%3==0
 	printFizzNext:
 
 div $t0 $t5	#lo = t0%5	
-mfhi $s0	#s0 = t0%5	#print BUZZ if t0%5==0
-beq $s0 $0 printBuzz
+mfhi $s0	#s0 = t0%5
+beq $s0 $0 printBuzz	#print BUZZ if t0%5==0
 	printBuzzNext:
 
 #Space to expand with other multiples
