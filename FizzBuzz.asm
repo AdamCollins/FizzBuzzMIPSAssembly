@@ -18,8 +18,12 @@ div $t0 $t5	#lo = t0%5
 mfhi $s0	#s0 = t0%5
 beq $s0 $0 printBuzz	#print BUZZ if t0%5==0
 	printBuzzNext:
-
 #Space to expand with other multiples
+
+bne $a0 0 end
+	li $v0 1
+	add $a0 $0 $t0
+	syscall
 
 j end		#end Program
 
