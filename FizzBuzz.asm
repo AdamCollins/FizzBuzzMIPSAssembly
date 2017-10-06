@@ -14,8 +14,8 @@ mfhi $s0	#s0 = t0%3
 beq $s0 $0 printFizz	#print FIZZ if t0%3==0
 	printFizzNext:
 
-div $t0 $t5	#lo = t0%5	#print BUZZ if t0%5==0
-mfhi $s0	#s0 = t0%5
+div $t0 $t5	#lo = t0%5	
+mfhi $s0	#s0 = t0%5	#print BUZZ if t0%5==0
 beq $s0 $0 printBuzz
 	printBuzzNext:
 
